@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Escape from neon prison is a retro-futuristic logical game with 80s graphical design and music! Available for Andorid and iOS">
     <meta name="keywords" content="retro,80s,synthwave,game,android,ios,mobile,escape,neon,prison,grid">
+    
+    <meta property="og:title" content="Escape from Neon Prison" />
+<meta property="og:image" content="img/logo/fullhd.jpg" />
 
     <title>Escape from Neon Prison</title>
 
@@ -217,7 +220,31 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Free Download at Google Play!</h2>
-                <a href="javascript:alert('soon...');" class="btn btn-default btn-xl sr-button">Download Now!</a>
+                <script>
+                var getUrlParameter = function getUrlParameter(sParam) {
+                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+                
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('=');
+                
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : sParameterName[1];
+                        }
+                    }
+                };
+                
+                function apkdownload(){
+                    if (getUrlParameter('apk') === true){
+                        window.location="https://mega.nz/#!pEYwmQTK";
+                    } else {
+                        alert("soon...");
+                    }
+                }
+                </script>
+                <a id="link" target="_blank" href="javascript:apkdownload();" class="btn btn-default btn-xl sr-button">Download Now!</a>
             </div>
         </div>
     </aside>
