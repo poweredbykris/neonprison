@@ -8,6 +8,14 @@ body {
   font-family: 'sans-serif', 'Helvetica Neue', Arial, sans-serif;
 }
 
+#services, #contact{
+    background-color:#000;
+}
+
+#services h3, #contact{
+    color:#ddd;
+}
+
 hr {
   border-color: #A900CF;
   border-width: 3px;
